@@ -1,10 +1,10 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useState, useEffect } from "react";
 // need to import logo
-import { AiFillHome, AiFillFolderOpen, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
+import { AiFillLinkedin } from 'react-icons/ai';
 import { SiGithub } from "react-icons/si";
-import { HiAcademicCap } from "react-icons/hi2";
 import { FaDiscord } from "react-icons/fa";
+import logo1 from "../assets/img/logo_transparent_background.png"
 
 
 export const NavBar = () => {
@@ -32,7 +32,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
     <Container>
       <Navbar.Brand href="#home">
-        <img src={''} alt="logo" />
+        <img src={logo1} alt="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav">
         <span className='navbar-toggle-icon'></span>
@@ -40,17 +40,17 @@ export const NavBar = () => {
     
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><AiFillHome />Home</Nav.Link>
-          <Nav.Link href="#link" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><HiAcademicCap/>Skills</Nav.Link>
-          <Nav.Link href="#link" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><AiFillFolderOpen />Projects</Nav.Link>
+          <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+          <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+          <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
         </Nav>
         <span className='navbar-text'>
           <div className='social-icons'>
-            <a href='#'><SiGithub /></a>
-            <a href='#'><AiFillLinkedin /></a>
-            <a href='discordapp.com/users/170444396905496577'><FaDiscord/></a>
+            <a href='https://github.com/ayxu5723' target='_blank' rel="noreferrer" ><SiGithub /></a>
+            <a href='https://www.linkedin.com/in/alex-xu-27b217261/' target='_blank' rel="noreferrer"><AiFillLinkedin /></a>
+            <a href='https://discordapp.com/users/170444396905496577' target='_blank' rel="noreferrer"><FaDiscord/></a>
           </div>
-          <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+          <button className="vvd" onClick={() => window.location = "#connect"}><span>Let's Connect</span></button>
         </span>
       </Navbar.Collapse>
     </Container>
