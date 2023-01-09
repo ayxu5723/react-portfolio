@@ -9,7 +9,7 @@ export const WPProjectCard = ({ title, description, imgUrl, deployedUrl }) => {
           <h4>{title}</h4>
           <span>{description}</span>
           <br />
-          <Button className="proj-btn" variant="primary" href={deployedUrl} target='_blank'>Website</Button>
+          <Button className="proj-btn" variant="primary" href={deployedUrl} target='_blank'>Visit Website</Button>
         </div>
       </div>
     </Col>

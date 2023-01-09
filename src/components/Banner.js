@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import devImg from "../assets/img/developer_img.png";
-import { BsArrowRightCircle } from "react-icons/bs";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -52,23 +51,16 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              <div className="animate__animated animate__fadeIn">
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Alex`} <br/> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full-Stack Web Developer", "WordPress Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => window.location = "#connect"}>Let’s Connect <BsArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
+                  <p>I can build and design websites/apps from scratch or modify existing frameworks to suit your needs. As an experienced writer, I am also able to create SEO friendly content to boost visibility.</p>
+              </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className="animate__animated animate__zoomIn">
                   <img src={devImg} alt="Developer Img"/>
-                </div>}
-            </TrackVisibility>
+                </div>
           </Col>
         </Row>
       </Container>
