@@ -1,13 +1,24 @@
-# Front-end Portfolio
+# ReactJs Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+  The is a portfolio site created using ReactJs.
 
-In the project directory, you can run:
+## Table of Contents
+  [Description](#description)<br/>
+ 
+  [Usage Information](#usage)<br/>
 
-### `npm start`
+  [Contact](#Contact)<br/> 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Usage
+This one's pretty self explanatory. It's a site containing my portfolio. Come check it out!
+</br>
+</br>
+![portfolio](/src/assets/images/portfolio1.png)
+
+
+## Contact
+[GitHub](https://github.com/ayxu5723) 
 
