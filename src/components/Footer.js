@@ -18,7 +18,7 @@ export const Footer = () => {
             <a href='https://www.linkedin.com/in/alex-xu-27b217261/' target='_blank' rel="noreferrer"><AiFillLinkedin /></a>
             <a href='https://discordapp.com/users/170444396905496577' target='_blank' rel="noreferrer"><FaDiscord/></a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            <p>Copyright 2023. Alex Xu</p>
           </Col>
         </Row>
       </Container>
