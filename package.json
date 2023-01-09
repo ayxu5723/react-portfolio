@@ -1,7 +1,7 @@
 {
-  "name": "hostiner-react-app",
+  "name": "axu_portfolio",
   "version": "0.1.0",
-  "homepage": "https://hostinger-react-app.com",
+  "homepage": "https://webdevaxu.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
